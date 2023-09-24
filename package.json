@@ -1,0 +1,36 @@
+{
+	"name": "demo-sveltkit-app",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "npm run migration:generate && vite dev",
+		"build": "npm run migration:generate && vite build",
+		"preview": "vite preview",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write .",
+		"migration:generate": "drizzle-kit generate:sqlite",
+		"migration:push": "drizzle-kit push:sqlite",
+		"drizzle:studio": "drizzle-kit studio "
+	},
+	"devDependencies": {
+		"@fontsource/fira-mono": "^4.5.10",
+		"@neoconfetti/svelte": "^1.0.0",
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-vercel": "^3.0.3",
+		"@sveltejs/kit": "^1.20.4",
+		"drizzle-kit": "^0.19.13",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte": "^2.30.0",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.10.1",
+		"svelte": "^4.0.5",
+		"vite": "^4.4.2"
+	},
+	"type": "module",
+	"dependencies": {
+		"@fontsource/poppins": "^5.0.8",
+		"bcrypt": "^5.1.1",
+		"better-sqlite3": "^8.6.0",
+		"drizzle-orm": "^0.28.6"
+	}
+}

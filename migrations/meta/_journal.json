@@ -1,0 +1,13 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1695541639300,
+      "tag": "0000_neat_darkstar",
+      "breakpoints": true
+    }
+  ]
+}
